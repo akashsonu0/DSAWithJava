@@ -18,7 +18,7 @@ public class alphabetSquare {
 		
 		for(int i=1;i<=n;i++) { //rows
 			for(int j=1;j<=n;j++) { // columns
-				System.out.print((char)(j+64) +" ");
+				System.out.print((char)(i+64) +" ");
 				 
 			}
 			System.out.println();
