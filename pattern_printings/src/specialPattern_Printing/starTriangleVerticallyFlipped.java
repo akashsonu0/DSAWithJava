@@ -16,5 +16,4 @@ public class starTriangleVerticallyFlipped {
 			System.out.println();	
 		}
 	}
-
 }
