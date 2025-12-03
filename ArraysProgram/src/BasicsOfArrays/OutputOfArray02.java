@@ -2,7 +2,7 @@ package BasicsOfArrays;
 
 import java.util.Scanner;
 
-public class OutputOfArray {
+public class OutputOfArray02 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
