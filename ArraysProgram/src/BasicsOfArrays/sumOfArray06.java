@@ -1,6 +1,6 @@
 package BasicsOfArrays;
 
-public class sumOfArray {
+public class sumOfArray06 {
 
 	public static void main(String[] args) {
 		/*
