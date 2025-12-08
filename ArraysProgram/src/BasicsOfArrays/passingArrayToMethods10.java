@@ -8,6 +8,7 @@ public class passingArrayToMethods10 {
 		change(arr);
 		System.out.println(arr[0]);
 	}
+	
 	public static void change(int[] arr) {
 		arr[0]=90;
 	}
