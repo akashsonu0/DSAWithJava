@@ -10,7 +10,7 @@ public class starSquare {
 		int n = sc.nextInt();
 		for(int i=1;i<=n;i++) { // rows
 			for(int j=1;j<=n;j++) { // columns
-				System.out.print("* ");
+				System.out.print(j);
 			}
 			System.out.println();
 		}
