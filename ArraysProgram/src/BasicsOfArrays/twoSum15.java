@@ -1,6 +1,6 @@
 package BasicsOfArrays;
 
-public class twoSum14 {
+public class twoSum15 {
 
 	public static void main(String[] args) {
 		int[] arr = {3,0,8,5,4,9,2};
