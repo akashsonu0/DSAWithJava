@@ -1,6 +1,6 @@
 package BasicsOfArrays;
 
-public class nestGreatestElement21 {
+public class nextGreatestElement21 {
 
 	public static void main(String[] args) {
 		int[] arr = {12,8,41,37,2,49,16,28,21};
