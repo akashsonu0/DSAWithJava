@@ -1,6 +1,6 @@
 package TwoDArrays;
 
-public class forEach {
+public class forEac03 {
 
 	public static void main(String[] args) {
 		int[] a = {4,7,2,8};
