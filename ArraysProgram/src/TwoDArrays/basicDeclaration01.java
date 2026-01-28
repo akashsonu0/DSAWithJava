@@ -1,6 +1,6 @@
 package TwoDArrays;
 
-public class basicDeclaration {
+public class basicDeclaration01 {
 
 	public static void main(String[] args) {
 		int[][] grid = new int[3][3];
