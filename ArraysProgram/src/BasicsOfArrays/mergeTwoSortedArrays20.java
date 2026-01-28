@@ -26,7 +26,7 @@ public class mergeTwoSortedArrays20 {
 					k++;
 				}
 			}
-			if(i==brr.length) { //now take elements from a only
+			if(j==brr.length) { //now take elements from a only
 				while(i<arr.length) {
 					crr[k] = arr[i];
 					i++;
