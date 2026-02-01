@@ -38,7 +38,7 @@ public class spiralPrinting12 {
 				System.out.print(arr[maxr][j]+" ");
 			} maxr--;
 			
-			//top to bottom
+			//bottom to top
 			if(minr>maxr || minc>maxc) break;
 			for(int i=maxr;i>=minr;i--) {
 				System.out.print(arr[i][minc]+" ");
