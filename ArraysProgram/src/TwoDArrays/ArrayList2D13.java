@@ -16,15 +16,15 @@ public class ArrayList2D13 {
 		List<List<Integer>> l =new ArrayList<>();
 		l.add(a); l.add(b); l.add(c); l.add(d);
 		
-//		for(int i=0;i<l.size();i++) {
-//			System.out.println(l.get(i));
-//		}
 		for(int i=0;i<l.size();i++) {
-			for(int j=0;j<l.get(i).size();j++) {
-				System.out.print(l.get(i).get(j)+" ");
-			}
-			System.out.println();
+			System.out.println(l.get(i));
 		}
+//		for(int i=0;i<l.size();i++) {
+//			for(int j=0;j<l.get(i).size();j++) {
+//				System.out.print(l.get(i).get(j)+" ");
+//			}
+//			System.out.println();
+//		}
 		//System.out.println(l.get(1).get(0));
 	}
 
