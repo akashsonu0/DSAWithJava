@@ -11,6 +11,12 @@ public class indexOf05 {
 		String a = "bbcqqqq";
 		String b = "abc";
 		System.out.println(a.compareTo(b));
+		
+		String c = "Physics Wallah Skills";
+		System.out.println(c.contains("lla"));
+		System.out.println(c.startsWith("Phya"));
+		System.out.println(c.endsWith("ills"));
 	}
 
 }
+
