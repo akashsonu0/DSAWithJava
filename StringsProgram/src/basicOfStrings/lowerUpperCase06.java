@@ -3,7 +3,7 @@ package basicOfStrings;
 public class lowerUpperCase06 {
 
 	public static void main(String[] args) {
-	String s = "Akash sonu is a handsome gie";
+	String s = "Akash sonu is a handsome man";
 	// System.out.println(s.toLowerCase());
 	// s.toLowerCase(); -> nothing will happen
 	s = s.toLowerCase();
