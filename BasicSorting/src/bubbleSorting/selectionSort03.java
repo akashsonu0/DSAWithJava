@@ -11,6 +11,7 @@ public class selectionSort03 {
 		int[] arr = {10,-4,20,1,-6,8};
 		int n = arr.length;
 		print(arr);
+		// Selection Sort
 		for(int i=0;i<n-1;i++) {
 			int min = Integer.MAX_VALUE;
 			int mindx = -1;
