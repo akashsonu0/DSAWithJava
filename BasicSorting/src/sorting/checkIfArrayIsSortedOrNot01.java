@@ -15,5 +15,4 @@ public class checkIfArrayIsSortedOrNot01 {
 		if(flag==true) System.out.println("Sorted");
 		else System.out.println("Unsorted");
 	}
-
 }
