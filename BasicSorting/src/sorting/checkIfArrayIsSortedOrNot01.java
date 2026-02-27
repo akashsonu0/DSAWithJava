@@ -1,4 +1,4 @@
-package bubbleSorting;
+package sorting;
 
 public class checkIfArrayIsSortedOrNot01 {
 

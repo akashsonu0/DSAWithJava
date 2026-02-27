@@ -1,4 +1,4 @@
-package bubbleSorting;
+package sorting;
 
 public class selectionSort03 {
 	public static void print(int[] arr) {
