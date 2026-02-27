@@ -5,7 +5,7 @@ public class selectionSort03 {
 		for(int ele : arr) {
 			System.out.print(ele+" ");
 		}
-		System.out.println();
+		 System.out.println();
 	}
 	public static void main(String[] args) {
 		int[] arr = {10,-4,20,1,-6,8};
