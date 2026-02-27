@@ -49,5 +49,4 @@ public class bubbleSort02 {
 			}
 		print(arr);
 	}
-
 }
