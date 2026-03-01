@@ -8,7 +8,7 @@ public class insertionSorting04 {
 		 System.out.println();
 	}
 	public static void main(String[] args) {
-		int[] arr = {10,-4,20,7,-6,8};
+		int[] arr = {3,5,1,4,2};
 		int n = arr.length;
 		print(arr);
 		// Insertion Sort
