@@ -8,7 +8,7 @@ public class binarySearch01 {
 		int lo = 0 , hi = n-1;
 		boolean flag = false;
 		while(lo<=hi) {
-			int mid = (lo+hi)/2;
+			int mid = lo+(hi-lo)/2;
 			if(arr[mid]==target) {
 				flag = true; break;
 			}
