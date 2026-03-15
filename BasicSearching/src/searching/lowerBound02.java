@@ -4,7 +4,7 @@ public class lowerBound02 {
 	public static void main(String[] args) {
 		int[] arr = {10,23,46,46,91,97,97,140,264};
 		int n = arr.length;
-		int target = 40;
+		int target = 46;
 		int lb = n; //lowerBound
 		int lo = 0 , hi = n-1;
 		while(lo<=hi) {
