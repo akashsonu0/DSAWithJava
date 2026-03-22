@@ -5,24 +5,22 @@ import java.util.Scanner;
 public class frequencyArray09 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String s = sc.nextLine();
+		String s = "abaaacrmnrrrrrra";
+		int n = s.length();
 		int[] freq = new int[26];
-		// 0-a, 1-b, 2-c, ....25-z
-		for(int i=0;i<s.length();i++) {
+		for(int i=0;i<n;i++) {
 			char ch = s.charAt(i);
-			int idx = (int)ch - 97; // storing the index
+			int idx = (int)ch-97;
 			freq[idx]++;
-			//freq[(int)s.charAt(i) - 97]++;	
 		}
 		int maxFreq = -1;
-		for(int i=0;i<freq.length;i++) {
+		for(int i=0;i<n;i++) {
 			maxFreq = Math.max(maxFreq, freq[i]);
 		}
-		for(int i=0;i<freq.length;i++) {
+		for(int i=0;i<n;i++) {
 			if(freq[i]==maxFreq) {
-				char ch = (char)(i+97);
-				System.out.print(ch+" ");
+				char ch = (char) (i+97);
+				System.out.println(ch);
 			}
 		}
 		
