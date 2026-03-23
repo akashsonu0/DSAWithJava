@@ -19,5 +19,4 @@ public class setIterate02 {
 		set.add(20);
 		System.out.println(set);
 	}
-
 }
