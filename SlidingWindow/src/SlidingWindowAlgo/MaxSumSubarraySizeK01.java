@@ -17,11 +17,11 @@ public class MaxSumSubarraySizeK01 {
 		
 		// Optimizd sliding window method
 		int i=0 , j=k-1 , sum=0;
-		for(int a=0;a<=k-1;a++) {
+		for(int a=0;a<=k-1;a++) { // k times
 			sum += arr[a];
 		}
 		i++; j++;
-		while(j<n) {
+		while(j<n) { // n-k times
 			sum = sum - arr[i-1] + arr[j];
 			maxSum = Math.max(maxSum, sum);
 			i++; j++;
