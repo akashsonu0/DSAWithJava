@@ -1,6 +1,6 @@
 package recursion;
 
-public class Permutation17 {
+public class Permutation18 {
 	public static void printPermutation(String ans,String s) {
 		if(s.length()==0) {
 			System.out.println(ans);
