@@ -2,7 +2,7 @@ package recursion;
 
 import java.util.Scanner;
 
-public class HcfRecursion18 {
+public class HcfRecursion19 {
 	// 1st method
 	public static int hcf(int a , int b) {
 		for(int i=Math.min(a, b);i>=1;i--) {
