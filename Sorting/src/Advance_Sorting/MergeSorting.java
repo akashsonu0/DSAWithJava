@@ -29,13 +29,15 @@ public class MergeSorting {
 		}
 		// copy pasting
 		for(int i=0;i<n-n/2;i++) {
-			a[i] = arr[i+n/2];
+			b[i] = arr[i+n/2];
 		}
 		// magic
 		mergesort(a);
 		mergesort(b);
 		// merge these 'a' and 'b'
 		merge(a,b,arr);
+		// delete a and b
+		a = null;  b = null;
 		
 	}
 	public static void main(String[] args) {		// TODO Auto-generated method stub
