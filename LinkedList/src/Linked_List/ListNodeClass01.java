@@ -14,7 +14,15 @@ public class ListNodeClass01 {
 			System.out.println(temp.val);
 			temp = temp.next;
 		}
+		System.out.println("--------------------------");
 	}
+	
+	public static void displayRecursive(Node head) {
+		if(head==null) return; // base case
+		System.out.println(head.val);
+		displayRecursive(head.next);
+	}
+	
 	public static void main(String[] args) {
 		Node a = new Node(10);
 		System.out.println(a);
@@ -44,13 +52,13 @@ public class ListNodeClass01 {
 		d2.next = e2; // 10 -> 20 -> 30 -> 40 -> 50
 		
 		print(a2);
+		displayRecursive(a2);
 		
 //		System.out.println(a2.val);
 //		System.out.println(a2.next.val);
 //		System.out.println(a2.next.next.val);
 //		System.out.println(a2.next.next.next.val);
 //		System.out.println(a2.next.next.next.next.val);
-		
 		
 					
 	}
