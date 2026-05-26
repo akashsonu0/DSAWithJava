@@ -8,6 +8,13 @@ class Node{
 }
 
 public class ListNodeClass01 {
+	public static void print(Node head) {
+		Node temp = head;
+		while(temp != null){
+			System.out.println(temp.val);
+			temp = temp.next;
+		}
+	}
 	public static void main(String[] args) {
 		Node a = new Node(10);
 		System.out.println(a);
@@ -36,11 +43,15 @@ public class ListNodeClass01 {
 		c2.next = d2; // 10 -> 20 -> 30 -> 40
 		d2.next = e2; // 10 -> 20 -> 30 -> 40 -> 50
 		
-		System.out.println(a2.val);
-		System.out.println(a2.next.val);
-		System.out.println(a2.next.next.val);
-		System.out.println(a2.next.next.next.val);
-		System.out.println(a2.next.next.next.next.val);
+		print(a2);
+		
+//		System.out.println(a2.val);
+//		System.out.println(a2.next.val);
+//		System.out.println(a2.next.next.val);
+//		System.out.println(a2.next.next.next.val);
+//		System.out.println(a2.next.next.next.next.val);
+		
+		
 					
 	}
 
