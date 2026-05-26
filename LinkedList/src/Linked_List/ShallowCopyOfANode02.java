@@ -8,8 +8,6 @@ public class ShallowCopyOfANode02 {
 		// Node temp = new Node(100); // deep copy
 		temp.val = 12;
 		System.out.println(a.val);
-		
-
 	}
 
 }
