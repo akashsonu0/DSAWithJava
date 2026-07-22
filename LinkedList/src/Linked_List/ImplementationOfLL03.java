@@ -24,6 +24,30 @@ class SLL{ // we will use as user defined data structure
 		size++;
 	}
 	
+	void insert(int idx , int val) {
+		if(idx == 0) {
+			insertAtHead(val);
+			return;
+		}
+		if(idx == size) {
+			insertAtTail(val);
+			return;
+		}
+		if(idx > size) {
+			System.out.println("Invalid Index!!");
+			return;
+		}
+		Node temp = new Node(val);
+		Node x = head; // 'x' is temporary node
+		for(int i=1;i<=idx-1;i++) {
+			x = x.next;
+		}
+		// insertion
+		temp.next = x.next;
+		x.next = temp;
+		size++;
+	}
+	
 	void display() {
 		Node temp = head;
 		while(temp != null){
@@ -55,6 +79,12 @@ public class ImplementationOfLL03 {
 		list.insertAtTail(40);
 		list.display();
 		list.insertAtHead(50);
+		list.display();
+		list.insert(2, 100);
+		list.display();
+		list.insert(4, 80);
+		list.display();
+		list.insert(10, 23);
 		list.display();
 	}
 
