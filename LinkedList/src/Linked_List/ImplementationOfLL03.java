@@ -1,4 +1,7 @@
 package Linked_List;
+
+import java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy;
+
 // Singly Linked List
 class SLL{ // we will use as user defined data structure
 	private Node head;
@@ -33,7 +36,7 @@ class SLL{ // we will use as user defined data structure
 			insertAtTail(val);
 			return;
 		}
-		if(idx > size) {
+		if(idx > size || idx<0) {
 			System.out.println("Invalid Index!!");
 			return;
 		}
@@ -46,6 +49,53 @@ class SLL{ // we will use as user defined data structure
 		temp.next = x.next;
 		x.next = temp;
 		size++;
+	}
+	
+	int get(int idx) throws Error{
+		if(idx==size-1) return tail.val;
+		if(idx >= size || idx<0) {
+			throw new Error("Invalid Index!!");
+	}
+		Node temp = head;
+		for(int i=1;i<=idx;i++) {
+			temp = temp.next;
+		}
+		return temp.val;
+	}
+	
+	void set(int idx, int val) throws Error{
+		if(idx==size-1) {
+			tail.val = val;
+		}
+		if(idx >= size || idx<0) {
+			throw new Error("Invalid Index!!");
+	}
+		Node temp = head;
+		for(int i=1;i<=idx;i++) {
+			temp = temp.next;
+		}
+		temp.val = val;
+	}
+	
+	void deleteAtHead() throws Error{
+		if(head==null) throw new Error("List is Empty");
+		head = head.next;
+		size--;
+	}
+	
+	void delete(int idx) throws Error{
+		if(idx==0) {
+			deleteAtHead();
+			return;
+		}
+		if(idx<0 || idx>=size) throw new Error("Invalid Index");
+		Node temp = head;
+		for(int i=1;i<=idx-1;i++) {
+			temp = temp.next;
+		}
+		if(temp.next==tail) tail = temp;
+		temp.next = temp.next.next;
+		size--;
 	}
 	
 	void display() {
@@ -86,6 +136,19 @@ public class ImplementationOfLL03 {
 		list.display();
 		list.insert(10, 23);
 		list.display();
+		
+		System.out.println(list.get(3));
+		//System.out.println(list.get(30));
+		
+		list.set(2, 90);
+		list.display();
+		
+		list.deleteAtHead();
+		list.display();
+		
+		list.delete(2);
+		list.display();
+		
 	}
 
 }
