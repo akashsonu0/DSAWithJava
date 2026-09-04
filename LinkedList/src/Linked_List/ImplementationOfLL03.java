@@ -1,7 +1,5 @@
 package Linked_List;
 
-import java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy;
-
 // Singly Linked List
 class SLL{ // we will use as user defined data structure
 	private Node head;
