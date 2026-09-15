@@ -28,9 +28,7 @@ public class pushElementAtAnyIndex06 {
 		}
 		
 		System.out.println(st_original);
-		
-		
-		
+			
 		
 	}
 
