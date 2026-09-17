@@ -1,20 +1,33 @@
 package pwskills.com;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class ArrayPractise {
 	public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter Array size : ");
-	int n = sc.nextInt();
-	int[] arr = new int[n];
-	for(int i=0;i<=n-1;i++) {
-		arr[i] = sc.nextInt();
-	}
-	for(int i=0;i<=n-1;i++) {
-	System.out.print(arr[i]+" ");
-	}
-	
+		Stack<Integer> st_org = new Stack<>();
+		st_org.push(10);
+		st_org.push(20);
+		st_org.push(30);
+		st_org.push(40);
+		st_org.push(50);
+		System.out.println(st_org);
+		
+		int new_ele = 5;
+		int pos =2;
+		
+		Stack<Integer> st_temp = new Stack<>();
+		while(st_org.size()>=pos) {
+			
+			st_temp.push(st_org.pop());
+		}
+		System.out.println(st_temp);
+		
+		st_org.push(new_ele);
+		while(!st_temp.isEmpty()) {
+			st_org.push(st_temp.pop());
+		}
+		System.out.println(st_org);
 		
 	}
 }
