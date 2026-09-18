@@ -14,11 +14,9 @@ public class ArrayPractise {
 		System.out.println(st_org);
 		
 		int new_ele = 5;
-		int pos =2;
-		
+		int pos = 2;
 		Stack<Integer> st_temp = new Stack<>();
-		while(st_org.size()>=pos) {
-			
+		while(st_org.size() >= pos) {
 			st_temp.push(st_org.pop());
 		}
 		System.out.println(st_temp);
@@ -28,6 +26,5 @@ public class ArrayPractise {
 			st_org.push(st_temp.pop());
 		}
 		System.out.println(st_org);
-		
 	}
 }
