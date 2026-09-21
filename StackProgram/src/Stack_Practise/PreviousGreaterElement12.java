@@ -2,7 +2,7 @@ package Stack_Practise;
 
 import java.util.Stack;
 
-public class PreviousGreaterElement11 {
+public class PreviousGreaterElement12 {
 	public static void prevGreater(int[] arr , int n) {
 		Stack<Integer> st = new Stack<>();
 		st.push(arr[0]);
