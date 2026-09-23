@@ -1,30 +1,32 @@
 package pwskills.com;
 
-import java.util.Scanner;
 import java.util.Stack;
 
 public class ArrayPractise {
+	public static void nextGreater(int[] arr , int n) {
+		Stack<Integer> st = new Stack<>();
+		int[] ans = new int[n];
+		st.push(arr[n-1]);
+		ans[n-1] = -1;
+		for(int i=n-2;i>=0;i--) {
+			while(!st.isEmpty() && st.peek() <= arr[i]) {
+				st.pop();
+			}
+			if(st.isEmpty()) {
+				ans[i] = -1;
+			}else {
+				ans[i] = st.peek();
+			}
+			st.push(arr[i]);
+		}
+		for(int i=0;i<n;i++) {
+			System.out.print(ans[i] + " ");
+		}
+	}
 	public static void main(String[] args) {
-		Stack<Integer> st_org = new Stack<>();
-		st_org.push(10);
-		st_org.push(20);
-		st_org.push(30);
-		st_org.push(40);
-		st_org.push(50);
-		System.out.println(st_org);
+		 int[] arr = {10, 4, 5, 20, 40, 12, 30};
+	        int n = arr.length;
+	        nextGreater(arr, n);
 		
-		int new_ele = 5;
-		int pos = 2;
-		Stack<Integer> st_temp = new Stack<>();
-		while(st_org.size() >= pos) {
-			st_temp.push(st_org.pop());
-		}
-		System.out.println(st_temp);
-		
-		st_org.push(new_ele);
-		while(!st_temp.isEmpty()) {
-			st_org.push(st_temp.pop());
-		}
-		System.out.println(st_org);
 	}
 }
