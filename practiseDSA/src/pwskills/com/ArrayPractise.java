@@ -1,32 +1,28 @@
 package pwskills.com;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class ArrayPractise {
-	public static void nextGreater(int[] arr , int n) {
+	public static void main(String[] args) {
+		 int price[] = {100, 80, 60, 70, 60, 75, 85};
+	     int n = price.length;
+	     int[] arr = new int[n];
 		Stack<Integer> st = new Stack<>();
-		int[] ans = new int[n];
-		st.push(arr[n-1]);
-		ans[n-1] = -1;
-		for(int i=n-2;i>=0;i--) {
-			while(!st.isEmpty() && st.peek() <= arr[i]) {
+		st.push(0);
+		for(int i=1;i<n;i++) {
+			while(!st.isEmpty() && price[i] >= price[st.peek()]) {
 				st.pop();
 			}
 			if(st.isEmpty()) {
-				ans[i] = -1;
-			}else {
-				ans[i] = st.peek();
+				arr[i] = i+1;
 			}
-			st.push(arr[i]);
+			else {
+				arr[i] = i - st.peek();
+				st.push(i);
+			}
 		}
-		for(int i=0;i<n;i++) {
-			System.out.print(ans[i] + " ");
-		}
-	}
-	public static void main(String[] args) {
-		 int[] arr = {10, 4, 5, 20, 40, 12, 30};
-	        int n = arr.length;
-	        nextGreater(arr, n);
-		
-	}
+		arr[0] = 1;
+		System.out.print(Arrays.toString(arr));
+  }
 }
