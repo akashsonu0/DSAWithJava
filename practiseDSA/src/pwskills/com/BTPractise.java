@@ -1,6 +1,15 @@
-package BT_Practise;
+package pwskills.com;
 
-public class levelOfBT05 {
+class Node{
+	int val;
+	Node left;
+	Node right;
+	Node(int val){
+		this.val = val;
+	}
+}
+
+public class BTPractise {
 	public static void main(String[] args) {
 		Node a = new Node(1); // a is the root
 		Node b = new Node(41);
@@ -16,12 +25,23 @@ public class levelOfBT05 {
 		c.right = f;
 		c.left = g; e.right = h;
 		
+		
+		
 		display(a);
 		System.out.println();
-		// a.left = null;
 		System.out.println(levels(a));
+		System.out.println(max(a));
+		System.out.println(size(a));
+		
 	}
 	
+	public static void display(Node root) {
+		if(root == null) return;
+		System.out.print(root.val+" ");
+		display(root.left);
+		display(root.right);
+		
+	}
 	
 	private static int levels(Node root) {
 		if(root == null) return 0;
@@ -34,13 +54,9 @@ public class levelOfBT05 {
 		return Math.max(a,Math.max(b,c));
 	}
 	
-	private static void display(Node root) {
-		if(root == null) return; // Base case
-		System.out.print(root.val+" "); // self
-		display(root.left); // left subtree
-		display(root.right); // right subtree
-
-
+	private static int size(Node root) {
+		if(root == null) return 0;
+		return 1 + size(root.left) + size(root.right);
 	}
 
 }
