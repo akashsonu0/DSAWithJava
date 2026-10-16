@@ -2,6 +2,7 @@ package BT_Practise;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// By Using BFS
 public class levelsOfOrder07 {
 	public static void main(String[] args) {
 		Node a = new Node(1); 
