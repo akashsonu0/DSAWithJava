@@ -1,5 +1,5 @@
 package BT_Practise;
-public class TraversalOfATree {
+public class TraversalOfATree06 {
 	public static void main(String[] args) {
 		Node a = new Node(1); // a is the root
 		Node b = new Node(2);
