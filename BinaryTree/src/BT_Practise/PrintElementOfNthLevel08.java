@@ -25,15 +25,12 @@ public class PrintElementOfNthLevel08 {
 	    n = sc.nextInt();
 		nThLevel(a,0);
 		
-		
 		// ye code sara level ko order mein print krwa k de dega
-		/*
 		  for(int x=0;x<=3;x++){
 		  	n = x;
 		  	nThLevel(a,0);
 		  	System.out.println();
-		 */
-		
+		  }
 	}
 	
 	private static void nThLevel(Node root , int level) {
